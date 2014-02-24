@@ -104,15 +104,15 @@ var life_progress = {
         var countdown = life_progress.get_countdown();
         var progress = life_progress.get_percent();
 
-        document.getElementById('life-remaining-years').innerText = countdown.years + ' year' + (countdown.years != 1 ? 's': '');
-        document.getElementById('life-remaining-months').innerText = countdown.months + ' month' + (countdown.months != 1 ? 's' : '');
-        document.getElementById('life-remaining-days').innerText = countdown.days + ' day' + (countdown.days != 1 ? 's' : '');
-        document.getElementById('life-remaining-hours').innerText = countdown.hours + ' hour' + (countdown.hours != 1 ? 's' : '');
-        document.getElementById('life-remaining-minutes').innerText = countdown.minutes + ' minute' + (countdown.minutes != 1 ? 's' : '');
-        document.getElementById('life-remaining-seconds').innerText = countdown.seconds + ' second' + (countdown.seconds != 1 ? 's' : '');
+        document.getElementById('life-remaining-years').textContent = countdown.years + ' year' + (countdown.years != 1 ? 's': '');
+        document.getElementById('life-remaining-months').textContent = countdown.months + ' month' + (countdown.months != 1 ? 's' : '');
+        document.getElementById('life-remaining-days').textContent = countdown.days + ' day' + (countdown.days != 1 ? 's' : '');
+        document.getElementById('life-remaining-hours').textContent = countdown.hours + ' hour' + (countdown.hours != 1 ? 's' : '');
+        document.getElementById('life-remaining-minutes').textContent = countdown.minutes + ' minute' + (countdown.minutes != 1 ? 's' : '');
+        document.getElementById('life-remaining-seconds').textContent = countdown.seconds + ' second' + (countdown.seconds != 1 ? 's' : '');
 
         document.getElementById('life-progress-elapsed').style.width = Math.round(progress * 10000)/100+'%';
-        document.getElementById('life-progress-elapsed').innerText = Math.round(progress * 10000)/100+'%';
+        document.getElementById('life-progress-elapsed').textContent = Math.round(progress * 10000)/100+'%';
     },
     start: function() {
         if (this.has_started) return;
