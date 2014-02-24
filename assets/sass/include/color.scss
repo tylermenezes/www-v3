@@ -1,0 +1,14 @@
+$color-base:            #f5f4f3;
+$color-contrast:        #000;
+$color-secrets:         #ccc;
+$color-accent:          #c40a0a;
+$color-accent-alt:      #e9614f;
+
+html {
+    background: $color-base;
+    color: $color-contrast;
+
+    a, a:hover, a:active, a:visited {
+        color: $color-accent;
+    }
+}

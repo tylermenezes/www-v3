@@ -1,0 +1,29 @@
+html body footer { @extend %width-full; @extend %clearafter;
+    padding-top: 2rem;
+
+    section.copyright { @extend %width-2;
+        float: left;
+        p {
+            color: $color-secrets;
+            font-size: 0.8rem;
+        }
+    }
+
+    section.progress { @extend %width-1;
+        float: right;
+        #life-progress-bar {
+            border: 1px solid $color-secrets;
+            padding: 1px;
+            height: 1.4rem;
+            #life-progress-elapsed { @extend %font-head;
+                background-color: $color-secrets;
+                height: 100%;
+                width: 0%;
+                text-align: center;
+                color: $color-base;
+                font-size: 0.8rem;
+                padding-top: 0.2rem;
+            }
+        }
+    }
+}

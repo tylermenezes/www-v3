@@ -1,0 +1,25 @@
+%font-body {
+    font: {
+        family: ff-meta-serif-web-pro, "Georgia", serif;
+        size: 1rem;
+        weight: normal;
+    }
+    text-transform: none;
+}
+
+%font-head {
+    font: {
+        family: sommet-rounded-1, "Helvetica", "Ariel", sans-serif;
+        weight: normal;
+        size: 2rem;
+    }
+    text-transform: uppercase;
+}
+
+html body {
+    a, a:hover, a:active, a:visited { @extend %font-body; }
+    p { @extend %font-body;
+        line-height: 1.5rem;
+    }
+    h1, h2, h3, h4, h5, h6 { @extend %font-head; }
+}

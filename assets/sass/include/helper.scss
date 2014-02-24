@@ -1,0 +1,21 @@
+%clearafter:after {
+    content: ".";
+    font-size: 0px;
+    display: block;
+    width: 0;
+    height: 0;
+    text-indent: 10000px;
+    visibility: hidden;
+    clear: both;
+}
+
+@mixin border-radius($tleft: 3px , $tright: 3px , $bright: 3px , $bleft: 3px) {
+    -moz-border-radius-topleft: $tleft;
+    -moz-border-radius-topright: $tright;
+    -moz-border-radius-bottomright: $bright;
+    -moz-border-radius-bottomleft: $bleft;
+    -webkit-border-top-left-radius: $tleft;
+    -webkit-border-top-right-radius: $tright;
+    -webkit-border-bottom-right-radius: $bright;
+    -webkit-border-bottom-left-radius: $bleft;
+}

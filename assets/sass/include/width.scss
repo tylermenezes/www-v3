@@ -1,0 +1,23 @@
+$width-block: 240px;
+$width-body: 3 * $width-block;
+
+%width-full {
+    width: 100%;
+    max-width: $width-body;
+    margin: 0 auto;
+}
+
+%width-1 {
+    width: 100%;
+    max-width: $width-block;
+}
+
+%width-2 {
+    width: 100%;
+    max-width: $width-block * 2;
+}
+
+%width-3 {
+    width: 100%;
+    max-width: $width-block * 3;
+}
