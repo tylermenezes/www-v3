@@ -39,6 +39,15 @@ var utils = {
             function(x) { return (f(f))(x); }
             );
         });
+    },
+    get_elem_vertical_offset: function(obj) {
+        var curtop = 0;
+        if (obj.offsetParent) {
+            do {
+                curtop += obj.offsetTop;
+            } while (obj = obj.offsetParent);
+            return [curtop];
+        }
     }
 }
 
@@ -62,6 +71,52 @@ var booker = {
         }
     }
 };
+
+var pk = {
+    elem: document.getElementById('pk-details'),
+    is_loaded: function()
+    {
+        return this.elem.style.display == 'block';
+    },
+    load: function()
+    {
+        if (this.is_loaded()) {
+            return;
+        }
+
+        this.elem.style.display = 'block';
+
+        if (window.location.hash == '') {
+            window.location.hash = '#pk';
+        }
+
+        if (window.location.hash == '#pk') {
+            window.scroll(0, utils.get_elem_vertical_offset(this.elem));
+        }
+    },
+    unload: function()
+    {
+        if (!this.is_loaded()) {
+            return;
+        }
+
+        this.elem.style.display = 'none';
+    },
+    toggle: function()
+    {
+        if (this.is_loaded()) {
+            this.unload();
+        } else {
+            this.load();
+        }
+    },
+    autoload_hash: function()
+    {
+        if (window.location.hash === '#pk') {
+            pk.load();
+        }
+    }
+}
 
 var life_progress = {
     born_at: 710395200 * 1000,
@@ -137,21 +192,27 @@ var life_progress = {
     }
 }
 
-window['l'] = life_progress;
-
 // Events
 window.addEventListener('load', function(){
     booker.autoload_hash();
+    pk.autoload_hash();
     life_progress.start();
 });
 window.addEventListener('hashchange', booker.autoload_hash);
+window.addEventListener('hashchange', pk.autoload_hash);
 
-document.getElementById('hours-book').addEventListener('click', function(e,f){
+document.getElementById('hours-book').addEventListener('click', function(e) {
     e.stopPropagation();
     e.preventDefault();
     booker.load();
     return false;
 });
 
+document.getElementById('pk-link').addEventListener('click', function(e) {
+    e.stopPropagation();
+    e.preventDefault();
+    pk.toggle();
+    return false;
+})
 
 })();

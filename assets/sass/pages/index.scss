@@ -57,6 +57,63 @@ html body.index section.content {
             }
         }
 
+        &.pk { @extend %clearafter;
+            clear: both;
+            display: none;
+
+            h2 {
+                padding-bottom: 1.5rem;
+            }
+
+            h3 { @extend %width-1;
+                margin-top: 0;
+                width: $width-block * 0.5;
+                float: left;
+                clear: left;
+                text-align: right;
+                padding-right: 1rem;
+
+                &, a { @extend %font-head;
+                    font-size: 1rem;
+                    font-weight: bold;
+                    color: $color-contrast;
+                }
+                padding-bottom: 1rem;
+            }
+            .fingerprint { @extend %width-2; @extend %font-head;
+                max-width: $width-block * 2.5;
+                float: left;
+                font-size: 1rem;
+                font-weight: normal;
+                span {
+                    padding: 0 0.3rem;
+
+                    &:nth-child(2n - 1) {
+                        color: lighten($color-contrast, 40);
+                    }
+
+                    &:nth-child(20n - 14) {
+                        padding-left: 1rem;
+                    }
+                }
+            }
+            .key { @extend %width-2;
+                max-width: $width-block * 2.5;
+                float: left;
+                font: {
+                    family: monospace;
+                }
+                height: 10rem;
+                overflow-y: scroll;
+                white-space: pre;
+                margin-bottom: 1rem;
+            }
+            .verifications { @extend %width-2;
+                max-width: $width-block * 2.5;
+                float: left;
+            }
+        }
+
         &.pictures { @extend %clearafter;
             clear: both;
             margin-left: -1 * ($width-block/2);

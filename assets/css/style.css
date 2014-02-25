@@ -10,7 +10,7 @@ html body a, html body a:hover, html body a:active, html body a:visited, html bo
   font-weight: normal;
   text-transform: none; }
 
-html body h1, html body h2, html body h3, html body h4, html body h5, html body h6, html body header > div > div nav ul li a, html body header > div > div nav ul li a:active, html body header > div > div nav ul li a:hover, html body header > div > div nav ul li a:visited, html body footer section.progress #life-progress-bar #life-progress-elapsed, html body.index section.content article.contact ul li h3, html body.index section.content article.hours .booker a {
+html body h1, html body h2, html body h3, html body h4, html body h5, html body h6, html body header > div > div nav ul li a, html body header > div > div nav ul li a:active, html body header > div > div nav ul li a:hover, html body header > div > div nav ul li a:visited, html body footer section.progress #life-progress-bar #life-progress-elapsed, html body.index section.content article.contact ul li h3, html body.index section.content article.pk h3, html body.index section.content article.pk h3 a, html body.index section.content article.pk .fingerprint, html body.index section.content article.hours .booker a {
   font-family: sommet-rounded-1, "Helvetica", "Ariel", sans-serif;
   font-weight: normal;
   font-size: 2rem;
@@ -24,15 +24,15 @@ html body section.content, html body footer, html body.index section.content art
   max-width: 720px;
   margin: 0 auto; }
 
-html body footer section.progress, html body.index section.content article.contact {
+html body footer section.progress, html body.index section.content article.contact, html body.index section.content article.pk h3 {
   width: 100%;
   max-width: 240px; }
 
-html body footer section.copyright, html body.index section.content article.about {
+html body footer section.copyright, html body.index section.content article.about, html body.index section.content article.pk .fingerprint, html body.index section.content article.pk .key, html body.index section.content article.pk .verifications {
   width: 100%;
   max-width: 480px; }
 
-html body header:after, html body footer:after, html body.index section.content article.contact:after, html body.index section.content article.pictures:after {
+html body header:after, html body footer:after, html body.index section.content article.contact:after, html body.index section.content article.pk:after, html body.index section.content article.pictures:after {
   content: ".";
   font-size: 0px;
   display: block;
@@ -177,6 +177,45 @@ html body.index section.content article {
           html body.index section.content article.contact ul li p, html body.index section.content article.contact ul li p a {
             font-family: sommet-rounded-1, "Helvetica", "Ariel", sans-serif;
             font-size: 0.8rem; }
+  html body.index section.content article.pk {
+    clear: both;
+    display: none; }
+    html body.index section.content article.pk h2 {
+      padding-bottom: 1.5rem; }
+    html body.index section.content article.pk h3 {
+      margin-top: 0;
+      width: 120px;
+      float: left;
+      clear: left;
+      text-align: right;
+      padding-right: 1rem;
+      padding-bottom: 1rem; }
+      html body.index section.content article.pk h3, html body.index section.content article.pk h3 a {
+        font-size: 1rem;
+        font-weight: bold;
+        color: black; }
+    html body.index section.content article.pk .fingerprint {
+      max-width: 600px;
+      float: left;
+      font-size: 1rem;
+      font-weight: normal; }
+      html body.index section.content article.pk .fingerprint span {
+        padding: 0 0.3rem; }
+        html body.index section.content article.pk .fingerprint span:nth-child(2n - 1) {
+          color: #666666; }
+        html body.index section.content article.pk .fingerprint span:nth-child(20n - 14) {
+          padding-left: 1rem; }
+    html body.index section.content article.pk .key {
+      max-width: 600px;
+      float: left;
+      font-family: monospace;
+      height: 10rem;
+      overflow-y: scroll;
+      white-space: pre;
+      margin-bottom: 1rem; }
+    html body.index section.content article.pk .verifications {
+      max-width: 600px;
+      float: left; }
   html body.index section.content article.pictures {
     clear: both;
     margin-left: -120px;
