@@ -184,7 +184,7 @@ html body.index section.content article {
       padding-bottom: 1.5rem; }
     html body.index section.content article.pk h3 {
       margin-top: 0;
-      width: 120px;
+      width: 192px;
       float: left;
       clear: left;
       text-align: right;
@@ -195,10 +195,11 @@ html body.index section.content article {
         font-weight: bold;
         color: black; }
     html body.index section.content article.pk .fingerprint {
-      max-width: 600px;
+      max-width: 528px;
       float: left;
       font-size: 1rem;
-      font-weight: normal; }
+      font-weight: normal;
+      text-align: right; }
       html body.index section.content article.pk .fingerprint span {
         padding: 0 0.3rem; }
         html body.index section.content article.pk .fingerprint span:nth-child(2n - 1) {
@@ -206,7 +207,7 @@ html body.index section.content article {
         html body.index section.content article.pk .fingerprint span:nth-child(20n - 14) {
           padding-left: 1rem; }
     html body.index section.content article.pk .key {
-      max-width: 600px;
+      max-width: 528px;
       float: left;
       font-family: monospace;
       height: 10rem;
@@ -214,7 +215,7 @@ html body.index section.content article {
       white-space: pre;
       margin-bottom: 1rem; }
     html body.index section.content article.pk .verifications {
-      max-width: 600px;
+      max-width: 528px;
       float: left; }
   html body.index section.content article.pictures {
     clear: both;

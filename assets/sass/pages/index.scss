@@ -67,7 +67,7 @@ html body.index section.content {
 
             h3 { @extend %width-1;
                 margin-top: 0;
-                width: $width-block * 0.5;
+                width: $width-block * 0.8;
                 float: left;
                 clear: left;
                 text-align: right;
@@ -81,10 +81,11 @@ html body.index section.content {
                 padding-bottom: 1rem;
             }
             .fingerprint { @extend %width-2; @extend %font-head;
-                max-width: $width-block * 2.5;
+                max-width: $width-block * 2.2;
                 float: left;
                 font-size: 1rem;
                 font-weight: normal;
+                text-align: right;
                 span {
                     padding: 0 0.3rem;
 
@@ -98,7 +99,7 @@ html body.index section.content {
                 }
             }
             .key { @extend %width-2;
-                max-width: $width-block * 2.5;
+                max-width: $width-block * 2.2;
                 float: left;
                 font: {
                     family: monospace;
@@ -109,7 +110,7 @@ html body.index section.content {
                 margin-bottom: 1rem;
             }
             .verifications { @extend %width-2;
-                max-width: $width-block * 2.5;
+                max-width: $width-block * 2.2;
                 float: left;
             }
         }
