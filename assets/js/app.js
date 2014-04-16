@@ -51,73 +51,6 @@ var utils = {
     }
 }
 
-var booker = {
-    load: function()
-    {
-        if (document.getElementById('hours-book') === null) {
-            return; // Already loaded
-        }
-
-        document.getElementById('hours-book').parentNode.innerHTML = '<iframe src="https://www.scheduleonce.com/tylermenezes&thm=white&dt=&em=1" id="SOI_tylermenezes" name="ScheduleOnceIframe"  scrolling="auto" frameborder="0" hspace="0" marginheight="0" marginwidth="0" height="620px" width="735px" vspace="0" style="border-radius: 7px;-webkit-border-radius:7px;"></iframe>';
-        utils.load_external('https://www.scheduleonce.com/mergedjs/ScheduleOnceEmbed.js', function(){
-            window['soe'].AddEventListners();
-        });
-    },
-
-    autoload_hash: function()
-    {
-        if (window.location.hash === '#hours') {
-            booker.load();
-        }
-    }
-};
-
-var pk = {
-    elem: document.getElementById('pk-details'),
-    is_loaded: function()
-    {
-        return this.elem.style.display == 'block';
-    },
-    load: function()
-    {
-        if (this.is_loaded()) {
-            return;
-        }
-
-        this.elem.style.display = 'block';
-
-        if (window.location.hash == '') {
-            window.location.hash = '#pk';
-        }
-
-        if (window.location.hash == '#pk') {
-            window.scroll(0, utils.get_elem_vertical_offset(this.elem));
-        }
-    },
-    unload: function()
-    {
-        if (!this.is_loaded()) {
-            return;
-        }
-
-        this.elem.style.display = 'none';
-    },
-    toggle: function()
-    {
-        if (this.is_loaded()) {
-            this.unload();
-        } else {
-            this.load();
-        }
-    },
-    autoload_hash: function()
-    {
-        if (window.location.hash === '#pk') {
-            pk.load();
-        }
-    }
-}
-
 var life_progress = {
     born_at: 710395200 * 1000,
     die_at: 3487464000 * 1000,
@@ -188,31 +121,18 @@ var life_progress = {
 
         setInterval(function(){
             animator(life_progress.tick);
-        }, 1000)
+        }, 1000);
+
+        animator(function(){
+            life_progress.tick();
+            document.getElementById('lifecount').style.display = 'inline';
+        });
     }
 }
 
 // Events
 window.addEventListener('load', function(){
-    booker.autoload_hash();
-    pk.autoload_hash();
     life_progress.start();
 });
-window.addEventListener('hashchange', booker.autoload_hash);
-window.addEventListener('hashchange', pk.autoload_hash);
-
-document.getElementById('hours-book').addEventListener('click', function(e) {
-    e.stopPropagation();
-    e.preventDefault();
-    booker.load();
-    return false;
-});
-
-document.getElementById('pk-link').addEventListener('click', function(e) {
-    e.stopPropagation();
-    e.preventDefault();
-    pk.toggle();
-    return false;
-})
 
 })();
