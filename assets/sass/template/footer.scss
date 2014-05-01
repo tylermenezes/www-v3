@@ -26,4 +26,15 @@ html body footer { @extend %width-full; @extend %clearafter;
             }
         }
     }
+
+    section.photocredit { 
+        clear: both;
+        width: 100%;
+        text-align: center;
+
+        p, a {
+            color: $color-secrets;
+            font-size: 0.8rem;
+        }
+    }
 }

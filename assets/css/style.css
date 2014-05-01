@@ -137,6 +137,13 @@ html body footer {
         color: #f5f4f3;
         font-size: 0.8rem;
         padding-top: 0.2rem; }
+  html body footer section.photocredit {
+    clear: both;
+    width: 100%;
+    text-align: center; }
+    html body footer section.photocredit p, html body footer section.photocredit a {
+      color: #cccccc;
+      font-size: 0.8rem; }
 
 html body.index section.content article {
   margin-bottom: 5rem; }
