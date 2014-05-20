@@ -55,6 +55,14 @@ html body.index section.content {
                     }
                 }
             }
+
+            & > p {
+                padding-top: 1rem;
+                clear: both;
+                width: 100%;
+                font-family: sommet-rounded-1, "Helvetica", "Ariel", sans-serif;
+                font-size: 0.8rem;
+            }
         }
 
         &.pk { @extend %clearafter;

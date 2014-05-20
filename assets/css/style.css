@@ -184,6 +184,12 @@ html body.index section.content article {
           html body.index section.content article.contact ul li p, html body.index section.content article.contact ul li p a {
             font-family: sommet-rounded-1, "Helvetica", "Ariel", sans-serif;
             font-size: 0.8rem; }
+    html body.index section.content article.contact > p {
+      padding-top: 1rem;
+      clear: both;
+      width: 100%;
+      font-family: sommet-rounded-1, "Helvetica", "Ariel", sans-serif;
+      font-size: 0.8rem; }
   html body.index section.content article.pk {
     clear: both;
     display: none; }
