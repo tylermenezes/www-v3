@@ -251,7 +251,7 @@
                     ]
                 }
             ];
-            var lastPos = new google.maps.LatLng({{ data.lastlocation.lat|round(4) }}, {{ data.lastlocation.lon|round(4) }});
+            var lastPos = new google.maps.LatLng({{ data.lastlocation.lat|round(2) }}, {{ data.lastlocation.lon|round(2) }});
 
             var mapOptions = {
                 center: new google.maps.LatLng(40.216194740798436, -95.59806542968748),
