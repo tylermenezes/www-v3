@@ -1,0 +1,309 @@
+html body.index section.content {
+    article {
+        h2 {
+            margin: 0;
+            font-size: 1.5rem;
+        }
+
+        h3 {
+            margin: 1rem 0 0.5rem;
+            font-size: 1rem;
+            text-align: center;
+        }
+
+        margin-bottom: 5rem;
+
+        &.about { @extend %width-2;
+            float: left;
+        }
+
+        &.contact { @extend %width-1; @extend %clearafter;
+            float: left;
+            padding-left: 4rem;
+
+            h2 {
+                text-align: center;
+            }
+
+            ul {
+                padding: 0;
+                li {
+                    list-style-type: none;
+                    h3 { @extend %font-head;
+                        float: left;
+                        clear: right;
+                        margin: 0;
+                        font-size: 0.8rem;
+                        padding-top: 0.4rem;
+                        font-weight: bold;
+                    }
+                    p {
+                        float: right;
+                        margin: 0;
+                        text-align: right;
+                        position: relative;
+                        top: -0.2rem;
+                        line-height: 1.3rem;
+                        margin-bottom: 0.1rem;
+
+                        &, a {
+                            font-family: sommet-rounded-1, "Helvetica", "Ariel", sans-serif;
+                            font-size: 0.8rem;
+                        }
+
+                        padding-top: 0.4rem;
+                    }
+                }
+            }
+
+            & > p {
+                padding-top: 1rem;
+                clear: both;
+                width: 100%;
+                font-family: sommet-rounded-1, "Helvetica", "Ariel", sans-serif;
+                font-size: 0.8rem;
+            }
+        }
+
+        &.pk { @extend %clearafter;
+            clear: both;
+            display: none;
+
+            h2 {
+                padding-bottom: 1.5rem;
+            }
+
+            h3 { @extend %width-1;
+                margin-top: 0;
+                width: $width-block * 0.8;
+                float: left;
+                clear: left;
+                text-align: right;
+                padding-right: 1rem;
+
+                &, a { @extend %font-head;
+                    font-size: 1rem;
+                    font-weight: bold;
+                    color: $color-contrast;
+                }
+                padding-bottom: 1rem;
+            }
+            .fingerprint { @extend %width-2; @extend %font-head;
+                max-width: $width-block * 2.2;
+                float: left;
+                font-size: 1rem;
+                font-weight: normal;
+                text-align: right;
+                span {
+                    padding: 0 0.3rem;
+
+                    &:nth-child(2n - 1) {
+                        color: lighten($color-contrast, 40);
+                    }
+
+                    &:nth-child(20n - 14) {
+                        padding-left: 1rem;
+                    }
+                }
+            }
+            .key { @extend %width-2;
+                max-width: $width-block * 2.2;
+                float: left;
+                font: {
+                    family: monospace;
+                }
+                height: 10rem;
+                overflow-y: scroll;
+                white-space: pre;
+                margin-bottom: 1rem;
+            }
+            .verifications { @extend %width-2;
+                max-width: $width-block * 2.2;
+                float: left;
+            }
+        }
+
+        &.hours {
+            clear: both;
+
+            .booker {
+                width: 100%;
+                text-align: center;
+
+                a { @extend %font-head;
+                    font-size: 1rem;
+                    text-decoration: none;
+                    text-transform: none;
+                    display: inline-block;
+                    padding: 1rem 2rem;
+                    background-color: $color-accent;
+                    color: $color-base;
+
+                    @include border-radius(2px, 2px, 2px, 2px);
+                }
+            }
+        }
+
+        &.pictures { @extend %clearafter;
+            clear: both;
+            margin-left: -1 * ($width-block/2);
+            width: $width-block * 4;
+            margin-bottom: 0;
+
+            ul {
+                padding: 0;
+                li {
+                    list-style-type: none;
+                    float: left;
+                    width: 240px;
+                    height: 240px;
+                    padding: 10px;
+
+                    &:first-child {
+                        width: 480px;
+                        height: 480px;
+                    }
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+
+            h2 {
+                margin-left: 120px;
+            }
+
+            & > p, & > a, & > div, & > section { @extend %width-full; }
+        }
+
+        &.data {
+            margin-left: -1 * ($width-block/2);
+            width: $width-block * 4;
+
+            &:after {
+                content: "";
+                display: block;
+                clear: both;
+                width: 0;
+                height: 0;
+            }
+
+            h2, h3 {
+                display: none;
+            }
+
+            .map {
+                padding: 10px;
+                h3 {
+                    display: none;
+                }
+
+
+                div {
+                    height: 400px;
+                    width: 100%;
+                }
+
+                span {
+                    display : block;
+                    padding: 4px 0 0 0;
+                    text-align: right;
+                    width: 100%;
+                    font-family: sommet-rounded-1, "Helvetica", "Ariel", sans-serif;
+                    font-size: 0.8rem;
+                    color: $color-secrets;
+                }
+            }
+
+            .music {
+                div {
+                    padding: 10px;
+                    float: left;
+                    width: 480px;
+
+                    h4 {
+                        font-size: 1rem;
+                        display: inline-block;
+                        width: 460px;
+                        margin: 0 0 10px 0;
+                    }
+                }
+
+                &:after {
+                    content: "";
+                    display: block;
+                    clear: both;
+                    width: 0;
+                    height: 0;
+                }
+
+                .nowplaying {
+                    &:after {
+                        content: "";
+                        display: block;
+                        clear: both;
+                        width: 0;
+                        height: 0;
+                    }
+
+                    a {
+                        color: $color-contrast;
+                    }
+
+                    &.noimage {
+                        .imageplaceholder {
+                            background-color: $color-secrets;
+                        }
+
+                        span {
+                            color: $color-secrets;
+                        }
+                    }
+
+                    h4 {
+                        width: 330px;
+                        padding-left: 20px;
+                    }
+
+                    img, .imageplaceholder {
+                        width: 120px;
+                        height: 120px;
+                        float: left;
+                    }
+
+                    span {
+                        &.title {
+                            font-size: 1.5rem;
+                            font-style: italic;
+                        }
+
+                        padding-left: 20px;
+                        display: inline-block;
+                        width: 330px;
+                    }
+                }
+
+                .topalbums {
+                    font-size: 0;
+                    ol {
+                        padding: 0;
+                        margin-right: -10px;
+                        margin-top: 5px;
+
+                        li {
+                            list-style-type: none;
+                            margin: 0 7px 7px 0;
+                            display: inline-block;
+
+                            img {
+                                width: 39px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
