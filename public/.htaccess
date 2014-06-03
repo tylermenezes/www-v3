@@ -1,6 +1,6 @@
 RewriteEngine On
 RewriteCond %{HTTP_HOST} ^www.tyler.vc$ [NC]
-RewriteRule ^(.*)$ https://tyler.vc/$1 [L,R=301]
+RewriteRule ^(.*)$ https://tyler.vc/$1 [L,R=307]
 
 RewriteCond %{HTTP:X-FORWARDED-PROTO} ^http$
-RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=307]
