@@ -20,6 +20,10 @@ html {
             height: 110%;
             margin-bottom: 2rem;
 
+            @media screen and (max-width: 720px) {
+                height: 300px;
+            }
+
            & > div {
                 display: table-row;
 
@@ -32,9 +36,15 @@ html {
                     min-height: 30rem;
 
                     background: {
-                        image: url(../img/cover.jpg);
+                        image: url(../img/event_closeup.jpg);
                         size: cover;
+                        position: 50% 50%;
                     }
+
+                    @media screen and (max-width: 720px) {
+                        background-image: url(../img/event_closeup.jpg)
+                    }
+
 
                     padding: 1rem 1rem 10% 1rem;
                     vertical-align: bottom;
@@ -50,6 +60,12 @@ html {
                         font-family: liquor-store-1, "Helvetica", "Ariel", sans-serif;
                         margin-bottom: 2rem;
                         color: $color-base;
+
+                        @media screen and (max-width: 720px) {
+                            font-size: 3rem;
+                            line-height: 2rem;
+                        }
+
                     }
 
                     nav {

@@ -1,8 +1,8 @@
 html {
-  background: #f5f4f3;
-  color: black; }
+  background: #f3f4f5;
+  color: #000; }
   html a, html a:hover, html a:active, html a:visited {
-    color: #c40a0a; }
+    color: #0a0ac4; }
 
 html body a, html body a:hover, html body a:active, html body a:visited, html body p, html body section.content {
   font-family: ff-meta-serif-web-pro, "Georgia", serif;
@@ -59,6 +59,9 @@ html {
       width: 100%;
       height: 110%;
       margin-bottom: 2rem; }
+      @media screen and (max-width: 720px) {
+        html body header {
+          height: 300px; } }
       html body header > div {
         display: table-row; }
         html body header > div > div {
@@ -67,10 +70,14 @@ html {
           width: 100%;
           height: 100%;
           min-height: 30rem;
-          background-image: url(../img/cover.jpg);
+          background-image: url(../img/event_closeup.jpg);
           background-size: cover;
+          background-position: 50% 50%;
           padding: 1rem 1rem 10% 1rem;
           vertical-align: bottom; }
+          @media screen and (max-width: 720px) {
+            html body header > div > div {
+              background-image: url(../img/event_closeup.jpg); } }
           html body header > div > div h1 {
             width: 100%;
             text-align: center;
@@ -78,7 +85,11 @@ html {
             line-height: 6rem;
             font-family: liquor-store-1, "Helvetica", "Ariel", sans-serif;
             margin-bottom: 2rem;
-            color: #f5f4f3; }
+            color: #f3f4f5; }
+            @media screen and (max-width: 720px) {
+              html body header > div > div h1 {
+                font-size: 3rem;
+                line-height: 2rem; } }
           html body header > div > div nav {
             width: 100%;
             text-align: center; }
@@ -110,31 +121,46 @@ html {
                 html body header > div > div nav ul li a, html body header > div > div nav ul li a:active, html body header > div > div nav ul li a:hover, html body header > div > div nav ul li a:visited {
                   padding: 0.5rem 0.75rem;
                   font-weight: normal;
-                  color: black;
-                  background-color: #f5f4f3;
+                  color: #000;
+                  background-color: #f3f4f5;
                   text-decoration: none;
                   font-size: 0.8rem;
                   letter-spacing: 0.05rem; }
 
+@media screen and (max-width: 720px) {
+  html body section.content {
+    padding: 0 1rem; } }
+
 html body footer {
   padding-top: 2rem; }
+  @media screen and (max-width: 720px) {
+    html body footer {
+      padding: 2rem 1rem 0; } }
   html body footer section.copyright {
     float: left; }
+    @media screen and (max-width: 720px) {
+      html body footer section.copyright {
+        float: none; } }
     html body footer section.copyright p {
-      color: #cccccc;
+      color: #ccc;
       font-size: 0.8rem; }
   html body footer section.progress {
     float: right; }
+    @media screen and (max-width: 720px) {
+      html body footer section.progress {
+        float: none;
+        width: 100%;
+        max-width: none; } }
     html body footer section.progress #life-progress-bar {
-      border: 1px solid #cccccc;
+      border: 1px solid #ccc;
       padding: 1px;
       height: 1.4rem; }
       html body footer section.progress #life-progress-bar #life-progress-elapsed {
-        background-color: #cccccc;
+        background-color: #ccc;
         height: 100%;
         width: 0%;
         text-align: center;
-        color: #f5f4f3;
+        color: #f3f4f5;
         font-size: 0.8rem;
         padding-top: 0.2rem; }
   html body footer section.photocredit {
@@ -142,7 +168,7 @@ html body footer {
     width: 100%;
     text-align: center; }
     html body footer section.photocredit p, html body footer section.photocredit a {
-      color: #cccccc;
+      color: #ccc;
       font-size: 0.8rem; }
 
 html body.index section.content article {
@@ -161,6 +187,13 @@ html body.index section.content article {
     padding-left: 4rem; }
     html body.index section.content article.contact h2 {
       text-align: center; }
+    @media screen and (max-width: 720px) {
+      html body.index section.content article.contact {
+        margin: 0 auto 5rem;
+        padding: 0;
+        float: none; }
+        html body.index section.content article.contact h2 {
+          text-align: left; } }
     html body.index section.content article.contact ul {
       padding: 0; }
       html body.index section.content article.contact ul li {
@@ -206,7 +239,7 @@ html body.index section.content article {
       html body.index section.content article.pk h3, html body.index section.content article.pk h3 a {
         font-size: 1rem;
         font-weight: bold;
-        color: black; }
+        color: #000; }
     html body.index section.content article.pk .fingerprint {
       max-width: 528px;
       float: left;
@@ -241,8 +274,8 @@ html body.index section.content article {
         text-transform: none;
         display: inline-block;
         padding: 1rem 2rem;
-        background-color: #c40a0a;
-        color: #f5f4f3;
+        background-color: #0a0ac4;
+        color: #f3f4f5;
         -moz-border-radius-topleft: 2px;
         -moz-border-radius-topright: 2px;
         -moz-border-radius-bottomright: 2px;
@@ -256,8 +289,13 @@ html body.index section.content article {
     margin-left: -120px;
     width: 960px;
     margin-bottom: 0; }
+    @media screen and (max-width: 720px) {
+      html body.index section.content article.pictures {
+        width: 100%;
+        margin-left: 0; } }
     html body.index section.content article.pictures ul {
-      padding: 0; }
+      padding: 0;
+      width: 100%; }
       html body.index section.content article.pictures ul li {
         list-style-type: none;
         float: left;
@@ -267,6 +305,13 @@ html body.index section.content article {
         html body.index section.content article.pictures ul li:first-child {
           width: 480px;
           height: 480px; }
+        @media screen and (max-width: 720px) {
+          html body.index section.content article.pictures ul li {
+            width: 50%;
+            height: auto; }
+            html body.index section.content article.pictures ul li:first-child {
+              width: 100%;
+              height: auto; } }
         html body.index section.content article.pictures ul li img {
           width: 100%;
           height: 100%; }
@@ -275,6 +320,10 @@ html body.index section.content article {
   html body.index section.content article.data {
     margin-left: -120px;
     width: 960px; }
+    @media screen and (max-width: 720px) {
+      html body.index section.content article.data {
+        width: 100%;
+        margin-left: 0; } }
     html body.index section.content article.data:after {
       content: "";
       display: block;
@@ -297,16 +346,22 @@ html body.index section.content article {
         width: 100%;
         font-family: sommet-rounded-1, "Helvetica", "Ariel", sans-serif;
         font-size: 0.8rem;
-        color: #cccccc; }
+        color: #ccc; }
     html body.index section.content article.data .music div {
       padding: 10px;
       float: left;
       width: 480px; }
+      @media screen and (max-width: 720px) {
+        html body.index section.content article.data .music div {
+          width: 100%; } }
       html body.index section.content article.data .music div h4 {
         font-size: 1rem;
         display: inline-block;
         width: 460px;
         margin: 0 0 10px 0; }
+        @media screen and (max-width: 720px) {
+          html body.index section.content article.data .music div h4 {
+            width: 100%; } }
     html body.index section.content article.data .music:after {
       content: "";
       display: block;
@@ -320,14 +375,18 @@ html body.index section.content article {
       width: 0;
       height: 0; }
     html body.index section.content article.data .music .nowplaying a {
-      color: black; }
+      color: #000; }
     html body.index section.content article.data .music .nowplaying.noimage .imageplaceholder {
-      background-color: #cccccc; }
+      background-color: #ccc; }
     html body.index section.content article.data .music .nowplaying.noimage span {
-      color: #cccccc; }
+      color: #ccc; }
     html body.index section.content article.data .music .nowplaying h4 {
       width: 330px;
       padding-left: 20px; }
+      @media screen and (max-width: 720px) {
+        html body.index section.content article.data .music .nowplaying h4 {
+          display: inline;
+          width: 100%; } }
     html body.index section.content article.data .music .nowplaying img, html body.index section.content article.data .music .nowplaying .imageplaceholder {
       width: 120px;
       height: 120px;
@@ -339,8 +398,15 @@ html body.index section.content article {
       html body.index section.content article.data .music .nowplaying span.title {
         font-size: 1.5rem;
         font-style: italic; }
+      @media screen and (max-width: 720px) {
+        html body.index section.content article.data .music .nowplaying span {
+          width: 100%;
+          display: inline; } }
     html body.index section.content article.data .music .topalbums {
       font-size: 0; }
+      @media screen and (max-width: 720px) {
+        html body.index section.content article.data .music .topalbums {
+          display: none; } }
       html body.index section.content article.data .music .topalbums ol {
         padding: 0;
         margin-right: -10px;
@@ -355,31 +421,25 @@ html body.index section.content article {
 @-webkit-keyframes pageLoader {
   50% {
     opacity: 1; }
-
   99% {
     opacity: 0; }
-
   100% {
     opacity: 0;
     display: none;
     visibility: hidden;
     z-index: 1;
     position: static; } }
-
 @keyframes pageLoader {
   50% {
     opacity: 1; }
-
   99% {
     opacity: 0; }
-
   100% {
     opacity: 0;
     display: none;
     visibility: hidden;
     z-index: 1;
     position: static; } }
-
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
   .session-fadein {
     z-index: 9999;
@@ -391,3 +451,5 @@ html body.index section.content article {
     background: white;
     -webkit-animation: pageLoader 2s ease 0s 1 normal forwards;
     animation: pageLoader 2s ease 0s 1 normal forwards; } }
+
+/*# sourceMappingURL=style.css.map */

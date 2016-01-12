@@ -25,6 +25,15 @@ html body.index section.content {
                 text-align: center;
             }
 
+            @media screen and (max-width: 720px) {
+                margin: 0 auto 5rem;
+                padding: 0;
+                h2 {
+                    text-align: left;
+                }
+                float: none;
+            }
+
             ul {
                 padding: 0;
                 li {
@@ -150,8 +159,14 @@ html body.index section.content {
             width: $width-block * 4;
             margin-bottom: 0;
 
+            @media screen and (max-width: 720px) {
+                width: 100%;
+                margin-left: 0;
+            }
+
             ul {
                 padding: 0;
+                width: 100%;
                 li {
                     list-style-type: none;
                     float: left;
@@ -162,6 +177,16 @@ html body.index section.content {
                     &:first-child {
                         width: 480px;
                         height: 480px;
+                    }
+
+                    @media screen and (max-width: 720px) {
+                        width: 50%;
+                        height: auto;
+
+                        &:first-child {
+                            width: 100%;
+                            height: auto;
+                        }
                     }
 
                     img {
@@ -181,6 +206,11 @@ html body.index section.content {
         &.data {
             margin-left: -1 * ($width-block/2);
             width: $width-block * 4;
+
+            @media screen and (max-width: 720px) {
+                width: 100%;
+                margin-left: 0;
+            }
 
             &:after {
                 content: "";
@@ -222,12 +252,18 @@ html body.index section.content {
                     padding: 10px;
                     float: left;
                     width: 480px;
+                    @media screen and (max-width: 720px) {
+                        width: 100%;
+                    }
 
                     h4 {
                         font-size: 1rem;
                         display: inline-block;
                         width: 460px;
                         margin: 0 0 10px 0;
+                        @media screen and (max-width: 720px) {
+                            width: 100%;
+                        }
                     }
                 }
 
@@ -265,6 +301,11 @@ html body.index section.content {
                     h4 {
                         width: 330px;
                         padding-left: 20px;
+
+                        @media screen and (max-width: 720px) {
+                            display: inline;
+                            width: 100%;
+                        }
                     }
 
                     img, .imageplaceholder {
@@ -282,10 +323,18 @@ html body.index section.content {
                         padding-left: 20px;
                         display: inline-block;
                         width: 330px;
+
+                        @media screen and (max-width: 720px) {
+                            width: 100%;
+                            display: inline;
+                        }
                     }
                 }
 
                 .topalbums {
+                    @media screen and (max-width: 720px) {
+                        display: none;
+                    }
                     font-size: 0;
                     ol {
                         padding: 0;

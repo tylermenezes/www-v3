@@ -1,14 +1,14 @@
 <?php
 
 if ($_GET['proxy']) {
-    if (!preg_match('/^[A-Za-z0-9\-\.]*last\.fm\/[a-zA-Z0-9\-\.\/\_]*\/[A-Za-z0-9\-\_]+\.(jpg|png|gif)$/', $_GET['proxy'])) {
+    if (!preg_match('/^([A-Za-z0-9\-]*\.)*(last|lst)\.fm\/[a-zA-Z0-9\-\.\/\_]*\/[A-Za-z0-9\-\_]+\.(jpg|png|gif)$/', $_GET['proxy'])) {
         exit;
     }
 
     $image_type = preg_replace('/^.*\.([a-z]{3})$/', '\1', $_GET['proxy']);
 
     if (!in_array($image_type, ['png', 'jpg', 'gif'])) {
-        exit;
+        $image_type = 'png';
     }
 
     header('Content-type: image/'.$image_type);

@@ -1,0 +1,75 @@
+==================================================================
+https://keybase.io/tylermenezes
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://tyler.vc
+  * I am tylermenezes (https://keybase.io/tylermenezes) on keybase.
+  * I have a public key with fingerprint F5E1 680D E585 8726 B9ED  28CD 3DE4 622D FEFB E53E
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "client": {
+            "name": "keybase.io node.js client",
+            "version": "0.7.5"
+        },
+        "key": {
+            "fingerprint": "f5e1680de5858726b9ed28cd3de4622dfefbe53e",
+            "host": "keybase.io",
+            "key_id": "3DE4622DFEFBE53E",
+            "uid": "95ff745bb971a947d422601b439e2a00",
+            "username": "tylermenezes"
+        },
+        "merkle_root": {
+            "ctime": 1427413249,
+            "hash": "bf11345c3aba612e47c0dba3f03e73887d8cbc55afdecdaac621f212007cdaf2e5d53fd50292e4cdb19109a8f654719f7cc9c0f2f48292589a37940846668296",
+            "seqno": 184513
+        },
+        "service": {
+            "hostname": "tyler.vc",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1427413285,
+    "expire_in": 157680000,
+    "prev": "222fd69fe223febb48cc4ffd68756e6f439c0ba94ce42e043df6bb63e86b90a5",
+    "seqno": 36,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+
+owFdUm9oVlUcft+mSa86CkVyWI3LG1aOl3vPn/tnZG7TzRF9CbHYarw7f35nu+19
+732997p8nYsocsWsLKhcYV/yi2y4oHIYIkL5IUOkEZEGLVKsMSUW5lLxz7ljkXU+
+nfM7z+85z3Oe397lNZlcdunirht1J4+ezH47zTNbV448PGDwUFaNxgFDlHwIknQX
+sDIYjUYfVDmLoeCH9UEoofBCXL+AaTD6IYr9MNAos+AUqDHYkMLTZuUHPRBVIj/l
+MhQFy3ZNCdSlroNs7oFErpBYArERkgoUB4pBU/aGcfKfV415zqIvdRVvak3xm9pa
+21paKW7Vd9vnLzyqlEMo555jMY84kiBkmxYn2APETDMFxhAtWEqqJYjKEMBOiFPN
+ZYj6SlCMwnDeuEj8FGYR5BALI+JpVSzu1Y1cWRYmVGDGmW0hII4wJWdYmRgc7LqO
+dAUXlDIlQUjGhI0shSxkmo4+KgRUUqwkNZGnm4XklmeZHnOVTYljecoRwhOmQoq4
+GkFdj2HHI6ZLbNvWFVvbiGFbEGpxLqEWHkzPUb8vINWdft2dDgv9QjdUojAJRVjS
+1d4kqcSNqeOkWklhLwIfLy4wFLkfSJ3anbFaGvq/33BpgwE7Kn4ERT9FUEcHq1f6
+EPRrToSQkranACGsgHPiCkGULrkOtcFWOhJhch2SAILAJFgqm3Mbg6vHwmT0X4/Y
+1kJZj+aM/Z6AJdsjMAbfyK5ZlMnmMncvvisd3Ezunnv/meZDo0tubpjdN7sueub3
+jrdzx0d3jjm/1Pza3b0s+Oz1RyZP32q69HzTqp+Lc33dx8t/dLRMLzrWPbHxr5s7
+0Jq5Y3Pvf1/4Kv/Yxq7vLj70AzPuP7Dn9MUtQ2eHz5Q/qftmevzzgXOn1k+u+mh2
+9wT5bVfNiL+/s+7ygb372s8cOfHSu+5Yc6H01H3Da2emDtLx7I/t9W8+cXiIfZC/
+3Ba9fOjjVyfyo/xs8ch7y5tx85/PZadqHz1YGl9/YsWYan7n6QvXO2c2t19xVv90
+fejJ8sCH8fmr+a7afMNbTYdzX79SOzW47tNrV/4+Xz33Bd6zdnpLy7Lh11bunvxy
+/9ZTHTfQkhVHN8w8+2DvrgsjmzsfSB6/DQ==
+=NlNR
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/tylermenezes
+
+==================================================================

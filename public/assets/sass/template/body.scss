@@ -1,3 +1,5 @@
 html body section.content { @extend %width-full; @extend %font-body;
-
+    @media screen and (max-width: 720px) {
+        padding: 0 1rem
+    }
 }

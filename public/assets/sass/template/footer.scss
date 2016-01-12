@@ -1,8 +1,14 @@
 html body footer { @extend %width-full; @extend %clearafter;
     padding-top: 2rem;
+    @media screen and (max-width: 720px) {
+        padding: 2rem 1rem 0;
+    }
 
     section.copyright { @extend %width-2;
         float: left;
+        @media screen and (max-width: 720px) {
+            float: none;
+        }
         p {
             color: $color-secrets;
             font-size: 0.8rem;
@@ -11,6 +17,11 @@ html body footer { @extend %width-full; @extend %clearafter;
 
     section.progress { @extend %width-1;
         float: right;
+        @media screen and (max-width: 720px) {
+            float: none;
+            width: 100%;
+            max-width: none;
+        }
         #life-progress-bar {
             border: 1px solid $color-secrets;
             padding: 1px;

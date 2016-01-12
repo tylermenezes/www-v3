@@ -25,6 +25,9 @@
     <meta name="twitter:image" content="https://tyler.vc/assets/img/og.jpg"/>
     <meta name="twitter:description" content="Tyler Menezes is a tech education entrepreneur with a cat blanket."/>
 
+    <meta content="True" name="HandheldFriendly" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="stylesheet" href="/assets/css/style.css" />
 </head>
 <body class="index">
@@ -35,8 +38,8 @@
                 <h1>Tyler Menezes</h1>
                 <nav>
                     <ul>
-                        <li><a href="http://tylermenezes.com/">Writing</a></li>
-                        <li><a href="http://www.meetme.so/tylermenezes">Office Hours</a></li>
+                        <li><a href="http://x.tyler.vc/">Writing</a></li>
+                        <li><a href="mailto:tylermenezes@protonmail.ch">Email</a></li>
                     </ul>
                 </nav>
             </div>
@@ -44,17 +47,17 @@
     </header>
     <section class="content">
         <article class="about">
-            <h2><a name="about"></a>About Me</h2>
+            <h2><a name="bio"></a>Bio</h2>
             <section class="response">
-                <p>I am the Program Director at <a href="https://studentrnd.org/">StudentRND</a>, which means I spend
-                   my days working to improve tech education.</p>
-                <p>I dropped out of college (<a href="http://tylermenezes.com/dropping-out">but I don't generally
-                   recommend it</a>).</p>
-                <p>In the past, I founded Framebase, a Y Combinator-backed startup which is sadly now defunct. Before
-                   that, I worked for several small startups, and as a research intern at Microsoft Research.</p>
-                <p>My goal in life is to build lasting changes which really make the world better.
+                <p>Tyler Menezes is the executive director of StudentRND, where he works to improve tech education in
+                   almost 40 cities nationwide through events such as CodeDay. For his work in tech education, he was
+                   named one of the top 30 Under 30 in the Seattle area by the 425 Business magazine.</p>
+                <p>Previously, he co-founded Framebase, a now-defunct video startup which was backed by Y Combinator,
+                   Pejman Nozad, and several other angel investors.</p>
+                <p>He dropped out of college but doesn't generally recommend it.</p>
+                <p>Tyler's goal in life is to build lasting changes which really make the world better.
                     <span id="lifecount" style="display: none">
-                        According to NIH and CDC estimates, I have somewhere around
+                        According to NIH and CDC estimates, he has somewhere around
                         <span id="life-remaining-years"></span>,
                         <span id="life-remaining-months"></span>,
                         <span id="life-remaining-days"></span>,
@@ -75,47 +78,36 @@
                 </li>
                 <li>
                     <h3>Email</h3>
-                    <p><a href="mailto:tylermenezes@gmail.com">t&hellip;s@gmail.com</a></p>
+                    <p><a href="mailto:tylermenezes@protonmail.ch">t&hellip;s@protonmail.ch</a></p>
                 </li>
                 <li>
                     <h3>Phone</h3>
-                    <p>(206) 853-8786</p>
+                    <p>(206) 739-4741</p>
                 </li>
                 <li>
-                    <h3>Mail</h3>
-                    <p>Tyler Menezes<br />
-                       15600 NE 8th ST<br />
-                       STE B1 PMB 622<br />
-                       Bellevue WA 98008</p>
+                    <h3>Call Sign</h3>
+                    <p>KG7TUJ</p>
                 </li>
                 <li>
                     <h3>PK</h3>
-                    <p><a href="https://keybase.io/tylermenezes">98C0 08FE 06DF 0C41</a></p>
+                    <p><a href="https://keybase.io/tylermenezes">3DE4 622D FEFB E53E</a></p>
+                </li>
+                <li>
+                    <h3>Press Photos</h3>
+                    <p><a href="/assets/img/press-1.jpg" target="_blank"><img src="/assets/img/press-1-small.jpg" /></a>
+                       <a href="/assets/img/press-2.jpg" target="_blank"><img src="/assets/img/press-2-small.jpg" /></a></p>
                 </li>
             </ul>
-            <p>n.b.: I only check email twice a day, and I usually let unknown numbers ring to
-               voicemail.</p>
-        </article>
-
-        <article class="hours">
-            <h2><a name="hours"></a>Office Hours</h2>
-            <p>I'm happy to discuss technology or startups with anyone. You can request a meeting below, and you'll
-               receive an email from me confirming shortly. If you're not near me (my current location is
-               displayed at the bottom of the page) please use your Skype handle as the location.
-            </p>
-            <div class="booker">
-                <a href="http://meetme.so/tylermenezes">Book Hours</a>
-            </div>
         </article>
 
         <article class="pictures">
             <h2><a name="pictures"></a>My Life</h2>
             <ul>
-                <li><img src="/assets/img/present.jpg" alt="Teaching at UW" /></li>
+                <li><img src="/assets/img/under30.jpg?1" alt="425 Business 30 Under 30" /></li>
                 <li><img src="/assets/img/yc.jpg" alt="YC S12" /></li>
                 <li><img src="/assets/img/teach.jpg" alt="CodeDay SF S13" /></li>
-                <li><img src="/assets/img/catblanket.jpg" alt="This is my cat blanket." /></li>
-                <li><img src="/assets/img/cd.jpg" alt="CodeDay Seattle W13" /></li>
+                <li><img src="/assets/img/catblanket.jpg" alt="This is my cat blanket" /></li>
+                <li><img src="/assets/img/present.jpg" alt="Teaching at UW" /></li>
             </ul>
         </article>
 
@@ -156,27 +148,28 @@
                         {% for album in data.music.topalbums[0:20] %}
                             <li>
                                 <a
-                                    href="http://grooveshark.com/search/album?q={{ album.name|url_encode }}"
+                                    href="https://play.google.com/music/listen?u=0#/sr/{{ album.name|url_encode }}"
                                     target="_blank">
-                                    <img src="{{ album.image }}" alt="{{ album.name }}" />
+                                    <img src="{{ album.image }}&" alt="{{ album.name }}" />
                                 </a>
                             </li>
                         {% endfor %}
                     </ol>
                 </div>
             </section>
-            <section class="map">
+{#            <section class="map">
                 <h3>Current Location</h3>
                 <div id="currentlocation"></div>
                 <span>
                     Last updated {{ data.lastlocation.time|date('M j, Y \\a\\t g:ia') }}
                 </span>
             </section>
+#}
         </article>
     </section>
     <footer>
         <section class="copyright">
-            <p>&copy; 2014</p>
+            <p>&copy; 2015</p>
         </section>
         <section class="progress">
             <p></p>
@@ -185,93 +178,9 @@
             </div>
         </section>
         <section class="photocredit">
-            <p>Photos by, in scanline order, <a href="http://adamryman.com/">Adam Ryman</a>, <a href="http://www.oneredoak.com/about.html">Patrick Ellis</a>, <a href="http://blog.garrytan.com/">Garry Tan</a>, <a href="http://edjiang.com/">Ed Jiang</a>, <a href="http://tessrinearson.com/">Tess Rinearson</a>, and <a href="https://studentrnd.org/">StudentRND</a>.</p>
+            <p>Photos by, in scanline order, <a href="http://www.alleycalkins.com/">Alley Calkins</a>, <a href="http://425business.com/">425 Business</a>, <a href="http://blog.garrytan.com/">Garry Tan</a>, <a href="http://edjiang.com/">Ed Jiang</a>, <a href="http://tessrinearson.com/">Tess Rinearson</a>, and <a href="http://www.oneredoak.com/about.html">Patrick Ellis</a>.</p>
         </section>
     </footer>
     <script type="text/javascript" src="/assets/js/app.js" async></script>
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCVggXa9btjGmzqgUim-1HjmnMtbF3UNms&sensor=false&libraries=visualization"></script>
-    <script type="text/javascript">
-        function initialize() {
-            var styleSimple = [
-                {
-                    "featureType": "landscape",
-                    "stylers": [
-                        { "visibility": "off" }
-                    ]
-                },{
-                    "featureType": "administrative",
-                    "stylers": [
-                        { "visibility": "off" }
-                    ]
-                },{
-                    "featureType": "administrative.country",
-                    "elementType": "geometry.stroke",
-                    "stylers": [
-                        { "visibility": "on" },
-                        { "color": "#f5f4f3" }
-                    ]
-                },{
-                    "featureType": "administrative.province",
-                    "elementType": "geometry",
-                    "stylers": [
-                        { "visibility": "on" }
-                    ]
-                },{
-                    "featureType": "administrative.province",
-                    "elementType": "labels",
-                    "stylers": [
-                        { "visibility": "off" }
-                    ]
-                },{
-                    "featureType": "road",
-                    "stylers": [
-                        { "visibility": "off" }
-                    ]
-                },{
-                    "featureType": "transit",
-                    "stylers": [
-                        { "visibility": "off" }
-                    ]
-                },{
-                    "featureType": "poi",
-                    "stylers": [
-                        { "visibility": "off" }
-                    ]
-                },{
-                    "featureType": "landscape",
-                    "elementType": "geometry",
-                    "stylers": [
-                        { "color": "#ffffff" },
-                        { "visibility": "on" }
-                    ]
-                },{
-                    "featureType": "water",
-                    "stylers": [
-                        { "color": "#f5f4f3" }
-                    ]
-                }
-            ];
-            var lastPos = new google.maps.LatLng({{ data.lastlocation.lat|round(2) }}, {{ data.lastlocation.lon|round(2) }});
-
-            var mapOptions = {
-                center: new google.maps.LatLng(40.216194740798436, -95.59806542968748),
-                zoom: 4,
-                disableDefaultUI: true,
-                styles: styleSimple
-            };
-            var map = new google.maps.Map(document.getElementById("currentlocation"),
-                mapOptions);
-
-            var marker = new google.maps.Marker({
-                position: lastPos,
-                map: map,
-                icon: {
-                    url: '/assets/img/marker.png',
-                    anchor: new google.maps.Point(13,25)
-                }
-            });
-        }
-        google.maps.event.addDomListener(window, 'load', initialize);
-    </script>
 </body>
 </html>
